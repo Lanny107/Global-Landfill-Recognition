@@ -1,0 +1,28 @@
+# Landfill Segmentation Post-Processing & Evaluation
+
+This repository provides MATLAB scripts for post-processing and evaluating binary segmentation masks using metrics like:
+
+- Intersection over Union (IoU)
+- Mean IoU (mIoU)
+- Overall Accuracy (OA)
+- Mean Class Accuracy (mAcc)
+
+## Features
+
+- Hole filling
+- Edge smoothing by area-perimeter ratio
+- Object removal based on aspect ratio
+- Filtering by area variation coefficient
+
+## Requirements
+
+- MATLAB R2020a or later
+- Image Processing Toolbox
+
+## How to Run
+
+Update your `data/` folder with ground truth and prediction images. Then run:
+
+```matlab
+main_IoU_analysis
+main_accuracy_analysis
